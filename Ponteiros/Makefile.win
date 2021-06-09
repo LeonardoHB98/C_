@@ -1,0 +1,67 @@
+# Project: Ponteiros
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = "Aula\ 61.o" "Aula\ 62.o" "Aula\ 63.o" "Aula\ 64.o" "Aula\ 65.o" "Aula\ 66.o" "Aula\ 67.o" "Aula\ 68.o" "Aula\ 69.o" "../pos\ e\ pre\ incremento/Aula\ 70.o" "Aula\ 71.o" "Aula\ 72.o" "Aula\ 73.o" "Aula\ 74.o"
+LINKOBJ  = "Aula 61.o" "Aula 62.o" "Aula 63.o" "Aula 64.o" "Aula 65.o" "Aula 66.o" "Aula 67.o" "Aula 68.o" "Aula 69.o" "../pos e pre incremento/Aula 70.o" "Aula 71.o" "Aula 72.o" "Aula 73.o" "Aula 74.o"
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -m64
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = Ponteiros.exe
+CXXFLAGS = $(CXXINCS) -m64 -std=gnu99
+CFLAGS   = $(INCS) -m64 -std=gnu99
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+"Aula\ 61.o": Aula\ 61.c
+	$(CC) -c "Aula 61.c" -o "Aula 61.o" $(CFLAGS)
+
+"Aula\ 62.o": Aula\ 62.c
+	$(CC) -c "Aula 62.c" -o "Aula 62.o" $(CFLAGS)
+
+"Aula\ 63.o": Aula\ 63.c
+	$(CC) -c "Aula 63.c" -o "Aula 63.o" $(CFLAGS)
+
+"Aula\ 64.o": Aula\ 64.c
+	$(CC) -c "Aula 64.c" -o "Aula 64.o" $(CFLAGS)
+
+"Aula\ 65.o": Aula\ 65.c
+	$(CC) -c "Aula 65.c" -o "Aula 65.o" $(CFLAGS)
+
+"Aula\ 66.o": Aula\ 66.c
+	$(CC) -c "Aula 66.c" -o "Aula 66.o" $(CFLAGS)
+
+"Aula\ 67.o": Aula\ 67.c
+	$(CC) -c "Aula 67.c" -o "Aula 67.o" $(CFLAGS)
+
+"Aula\ 68.o": Aula\ 68.c
+	$(CC) -c "Aula 68.c" -o "Aula 68.o" $(CFLAGS)
+
+"Aula\ 69.o": Aula\ 69.c
+	$(CC) -c "Aula 69.c" -o "Aula 69.o" $(CFLAGS)
+
+"../pos\ e\ pre\ incremento/Aula\ 70.o": ../pos\ e\ pre\ incremento/Aula\ 70.c
+	$(CC) -c "../pos e pre incremento/Aula 70.c" -o "../pos e pre incremento/Aula 70.o" $(CFLAGS)
+
+"Aula\ 71.o": Aula\ 71.c
+	$(CC) -c "Aula 71.c" -o "Aula 71.o" $(CFLAGS)
+
+"Aula\ 72.o": Aula\ 72.c
+	$(CC) -c "Aula 72.c" -o "Aula 72.o" $(CFLAGS)
+
+"Aula\ 73.o": Aula\ 73.c
+	$(CC) -c "Aula 73.c" -o "Aula 73.o" $(CFLAGS)
+
+"Aula\ 74.o": Aula\ 74.c
+	$(CC) -c "Aula 74.c" -o "Aula 74.o" $(CFLAGS)
